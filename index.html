@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prevención del Uso de Drogas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    nav {
+      background-color: #004d40;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b2dfdb;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    section {
+      background-color: #ffffff;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    h1, h2, h3, h4 {
+      color: #00796b;
+    }
+
+    img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    }
+
+    .info-box {
+      background-color: #e0f2f1;
+      padding: 1rem;
+      border-left: 6px solid #00796b;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #004d40;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PREVENCIÓN DEL USO DE DROGAS</h1>
+    <p>Educación, conciencia y acción para una vida saludable</p>
+  </header>
+
+  <nav>
+    <a href="#que-son">¿Qué son las drogas?</a>
+    <a href="#medidas">Medidas de prevención</a>
+    <a href="#consejos">Consejos</a>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <p>La prevención del uso de drogas es un esfuerzo continuo que busca evitar el consumo de sustancias psicoactivas, especialmente en jóvenes. Esta prevención se basa en la educación, el fortalecimiento familiar, el desarrollo de habilidades personales y el apoyo comunitario. Una comunidad informada es una comunidad más fuerte.</p>
+    </section>
+
+    <section id="que-son">
+      <h2>¿Qué son las drogas?</h2>
+      <p>Las drogas son sustancias que pueden modificar el funcionamiento del organismo al ser consumidas. Algunas tienen aplicaciones médicas, pero otras son ilegales o peligrosas cuando se usan sin control.</p>
+      <div class="info-box">
+        <strong>Ejemplos:</strong> Alcohol, tabaco, cannabis, cocaína, medicamentos psicotrópicos, entre otros.
+      </div>
+    </section>
+
+    <section id="medidas">
+      <h2>Medidas Clave para la Prevención</h2>
+
+      <h4>1. Educación Temprana</h4>
+      <p>Proveer información clara y basada en evidencia sobre los riesgos del consumo de drogas desde la infancia.</p>
+      <img src="prevención de las drogas.jpg" alt="educación temprana" width="300">
+
+      <h4>2. Fortalecimiento Familiar</h4>
+      <p>Crear entornos familiares estables, afectivos y comunicativos que brinden apoyo emocional.</p>
+      <img src="prevención de las drogas 2.jpg" alt="fortalecimiento familiar" width="300">
+
+      <h4>3. Actividades Saludables</h4>
+      <p>Fomentar la participación en deportes, artes y voluntariado para fortalecer el sentido de pertenencia y autoestima.</p>
+      <img src="prevención de las drogas 3.jpg" alt="actividades recreativas" width="300">
+
+      <h4>4. Habilidades para la Vida</h4>
+      <p>Desarrollar capacidades para enfrentar la presión social, tomar decisiones y resolver conflictos.</p>
+      <img src="prevención de las drogas 4.jpg" alt="desarrollo de habilidades" width="300">
+    </section>
+
+    <section id="consejos">
+      <h2>Consejos para Padres y Educadores</h2>
+      <ul>
+        <li>Escucha activa y comunicación diaria con los jóvenes.</li>
+        <li>Establece normas claras y coherentes.</li>
+        <li>Supervisa las amistades y el entorno.</li>
+        <li>Infórmate sobre señales de alerta y busca ayuda profesional si es necesario.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Prevención Integral. Todos los derechos reservados. | Contacto: info@prevencion.org</p>
+  </footer>
+
+  <script>
+    // Agrega un efecto de scroll suave al hacer clic en los enlaces del menú
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html>
